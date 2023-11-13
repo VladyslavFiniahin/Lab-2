@@ -1,0 +1,104 @@
+body {
+    position: relative;
+    background-image: url('./20200702-Green-ports-reports-1000x500pxl_tcm8-179370.jpg');
+    background-position: bottom;
+    background-size: cover;
+    margin: 0;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.374);
+    z-index: 2;
+}
+
+header {
+    position: relative;
+    z-index: 3;
+    padding-top: 60px;
+    >h1{
+        text-transform: uppercase;
+        color: orange;
+        text-align: center;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    >p {
+        color: rgba(255, 255, 255, 0.862);
+        text-align: center;
+    }
+}
+
+.bg-pos {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.white-bg {
+    width: 65%;
+    height: 200px;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    
+}
+
+.items {
+    position: relative;
+    color: rgba(0, 0, 0, 0.812);
+    line-height: 50px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 13px;
+    >img {
+        position: relative;
+        width: 21%;
+        top: 20px;
+    }
+
+    >h1 {
+        color: rgba(0, 0, 0, 0.778);
+        position: relative;
+        top: 12px;
+        font-size: 15px;
+    }
+
+    >p {
+        line-height: normal;
+    }
+}
+
+.gray-bg {
+    position: relative;
+    z-index: 3;
+    background-color: rgb(49, 48, 48);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    top: 156px;
+    >p {
+        position: relative;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.879);
+        font-size: 11px;
+        top: 40px;
+    }
+}
